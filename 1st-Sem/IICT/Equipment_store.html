@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehnat Store</title>
+
+    <!-- Main page styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Header + Footer CSS -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script defer src="header.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 50px;
+            letter-spacing: 4px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .search-container input {
+            width: 45%;
+            padding: 12px;
+            border-radius: 20px;
+            border: 1px solid #aaa;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 30px 70px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== HEADER LOADS HERE ========== -->
+    <div id="header-placeholder"></div>
+
+    <script>
+        fetch("header.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("header-placeholder").innerHTML = html;
+            });
+    </script>
+
+    <!-- PAGE CONTENT -->
+    <h1>MEHNAT STORE</h1>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search Products...">
+    </div>
+
+    <div class="products">
+
+        <a href="Product_Details.html" class="product-link">
+            <div class="product-card">
+                <img src="images/helmet.jpg" alt="Safety Helmet">
+                <h3>Safety Helmet</h3>
+                <p>Rs. 800 <br> Sold: 100</p>
+                <p>Durable construction helmet</p>
+            </div>
+        </a>
+
+        <div class="product-card">
+            <img src="images/gloves.jpg">
+            <h3>Work Gloves</h3>
+            <p>Rs. 500 <br> Sold: 88</p>
+            <p>Heavy-duty gloves for work</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/drill.jpg">
+            <h3>Electric Drill</h3>
+            <p>Rs. 2000 <br> Sold: 58</p>
+            <p>Impact drill with speed control</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/shovel.jpg">
+            <h3>Shovel</h3>
+            <p>Rs. 500 <br> Sold: 60</p>
+            <p>Durable steel shovel for digging</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/cleaning_supplies.jpg">
+            <h3>Cleaning Spray Kit</h3>
+            <p>Rs. 750 <br> Sold: 40</p>
+            <p>All cleaning sprays included</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/screw_set.jpg">
+            <h3>Screw Driver Set</h3>
+            <p>Rs. 450 <br> Sold: 88</p>
+            <p>Heavy-duty screwdriver set</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/hammer.jpg">
+            <h3>Hammer + Nails</h3>
+            <p>Rs. 400 <br> Sold: 110</p>
+            <p>Hammer with stainless steel nails</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/chainsaw.jpg">
+            <h3>Chainsaw</h3>
+            <p>Rs. 1500 <br> Sold: 33</p>
+            <p>Best for cutting timber</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/cutter.jpg">
+            <h3>Hedge Cutters</h3>
+            <p>Rs. 800 <br> Sold: 10</p>
+            <p>High-quality garden cutter</p>
+        </div>
+
+    </div>
+
+    <!-- ========== FOOTER LOADS HERE ========== -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("footer-placeholder").innerHTML = html;
+            });
+    </script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

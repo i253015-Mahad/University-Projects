@@ -1,0 +1,46 @@
+/* Header styling */
+header {
+  background: rgba(0, 0, 0, 0.6);  /* transparent black */
+  color: white;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 1px 2px;
+  height: 50px;
+  box-sizing: border-box;
+  position: fixed;      /* makes header stay at top */
+  top:  0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(6px); /* nice modern blur effect */
+}
+
+/* Logo image */
+.logo img {
+  margin-right: 500px;
+  height: 60px;      /* adjust height to fit header */
+  width: auto;       /* keeps aspect ratio */
+  display: block;    /* removes extra space under image */
+}
+
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display:inline-flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  color: #f0c674; /* gold-ish hover color */
+}

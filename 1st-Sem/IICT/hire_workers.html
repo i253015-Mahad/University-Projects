@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Workers</title>
+
+
+    <link rel="stylesheet" href="header.css">
+
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Left Filters */
+        .filter-box {
+            width: 18%;
+            padding: 20px;
+            background: #222;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Worker Grid */
+        .workers-section {
+            width: 82%;
+            padding: 20px 40px;
+        }
+
+        .worker-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .worker-card {
+            background: white;
+            border-radius: 6px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .worker-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .worker-card h3 {
+            margin: 8px 0 2px;
+        }
+
+        .location {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER================= -->
+    <div id="header"></div>
+
+
+    <!-- ================= MAIN PAGE CONTENT ================= -->
+    <div class="container">
+
+        <!-- -------- Left Filter Box -------- -->
+        <div class="filter-box">
+            <h2>Filter By:</h2>
+            <p>Age:</p>
+            <p>Experience:</p>
+            <p>Price:</p>
+            <p>Reviews:</p>
+        </div>
+
+        <!-- -------- Workers Grid -------- -->
+        <div class="workers-section">
+
+            <h3>Found 9 results Nearby...    (AI images)</h3>
+
+            <div class="worker-grid">
+
+                <!-- Worker Card Example  -->
+                <div class="worker-card">
+                    <img src="images/worker1.png" />
+                    <h3>Ahmed Khan</h3>
+                    <p>⭐ 4.8/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 500/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                
+
+                <!-- workers details link -->
+                <a href="mazdoor_details.html" style="text-decoration: none; color: inherit;">
+    <div class="worker-card">
+        <img src="images/mazdoor.png" />
+        <h3>Muhammad Aslam</h3>
+        <p>⭐ 4.7/5.0</p>
+        <p>Expert Brick Layer</p>
+        <p><b>Rs. 500/hr</b></p>
+        <p class="location">📍 Islamabad</p>
+    </div>
+</a>
+
+                <div class="worker-card">
+                    <img src="images/worker3.png" />
+                    <h3>Rashid Ali</h3>
+                    <p>⭐ 4.6/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 465/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker4.png" />
+                    <h3>Ahmed Khan</h3>
+                    <p>⭐ 4.5/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 460/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker6.png" />
+                    <h3>Zain Mehmood</h3>
+                    <p>⭐ 4.4/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 450/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker7.png" />
+                    <h3>Ali Chattha</h3>
+                    <p>⭐ 4.4/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 440/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker8.png" />
+                    <h3>Naveed Hassan</h3>
+                    <p>⭐ 4.3/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 430/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker5.png" />
+                    <h3>Salar Tariq</h3>
+                    <p>⭐ 4.3/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 450/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+                <div class="worker-card">
+                    <img src="images/worker2.png" />
+                    <h3>Shahid usman</h3>
+                    <p>⭐ 4.2/5.0</p>
+                    <p>Expert Brick Layer</p>
+                    <p><b>Rs. 450/hr</b></p>
+                    <p class="location">📍 Islamabad</p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER================= -->
+    <div id="footer"></div>
+
+
+    <!-- ================= JS TO IMPORT HEADER + FOOTER ================= -->
+    <script>
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+    <!-- Header JS -->
+    <script src="header.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
