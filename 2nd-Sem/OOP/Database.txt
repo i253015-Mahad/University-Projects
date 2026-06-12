@@ -1,0 +1,41 @@
+                                DATABASE
+
+                                USER TABLE
+user_id	|	username	|	password_hash	|	email				|	created_at
+1	|	Mahad		|	2974		|	mahadwaqas28@gmail.com		|	Fri May  1 11:16:34 2026
+2	|	Usman		|	6020		|	usmanlaghari28@gmail.com	|	Fri May  1 11:16:48 2026
+3	|	Testing		|	17375		|	leaderboard28@gmail.com		|	Fri May  1 11:17:48 2026
+4	|	Aayan		|	2974		|	aayanwaqas10@gmail.com		|	Fri May  1 15:23:34 2026
+5	|	Aarib		|	2974		|	aaribwaqas16@gmail.com		|	Fri May  1 15:23:52 2026
+6	|	Mahad Waqas	|	10479		|	i253015@isb.nu.edu.pk		|	Mon May  4 04:20:28 2026
+7	|	UsmanLaggs	|	884		|	usmansrone@gmail.com		|	Thu May  7 11:10:57 2026
+8	|	Usman		|	2744		|	mahadwaqas28@gamil.com		|	Mon May 11 16:56:45 2026
+9	|	Usman		|	2744		|	mahadwaqas28@gamil.com		|	Mon May 11 16:57:28 2026
+
+
+                            PLAYER_PROGRESS
+progress_id	|	user_id	|	current_level	|	lives_remaining	|	gem_count	|	high_score	|	last_updated
+1		|	1	|	1		|	2		|	0		|	0		|	Fri May  1 11:16:34 2026
+2		|	2	|	1		|	2		|	0		|	0		|	Fri May  1 11:16:48 2026
+3		|	3	|	1		|	2		|	0		|	0		|	Fri May  1 11:17:48 2026
+4		|	4	|	1		|	2		|	0		|	0		|	Fri May  1 15:23:34 2026
+5		|	5	|	1		|	2		|	0		|	0		|	Fri May  1 15:23:52 2026
+6		|	6	|	1		|	2		|	0		|	0		|	Mon May  4 04:20:28 2026
+7		|	7	|	1		|	2		|	0		|	0		|	Thu May  7 11:10:57 2026
+8		|	8	|	1		|	2		|	0		|	0		|	Mon May 11 16:56:45 2026
+9		|	9	|	1		|	2		|	0		|	0		|	Mon May 11 16:57:28 2026
+
+
+                              LEADERBOARD
+entry_id	|	user_id	|	score	|	level_reached	|	recorded_at
+
+3		|	9	|	0	|	1		|	Mon May 11 16:57:28 2026
+3		|	3	|	50	|	1		|	Fri May  1 11:17:48 2026
+1		|	7	|	0	|	1		|	Thu May  7 11:10:57 2026
+1		|	6	|	0	|	1		|	Mon May  4 04:20:28 2026
+1		|	4	|	100	|	1		|	Fri May  1 15:23:34 2026
+1		|	1	|	20	|	1		|	Fri May  1 11:16:34 2026
+2		|	8	|	0	|	1		|	Mon May 11 16:56:45 2026
+2		|	5	|	0	|	1		|	Fri May  1 15:23:52 2026
+2		|	2	|	0	|	1		|	Fri May  1 11:16:48 2026
+-----------------------------------------------------------------------------------
